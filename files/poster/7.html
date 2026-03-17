@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataSphere Ad – Build Your Tech Career</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #001f3f, #004b8d, #0077b6);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .ad-box {
+      background: rgba(255,255,255,0.1);
+      border-radius: 25px;
+      padding: 2.5rem 2rem;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 0 40px rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Floating tech animations */
+    .anim-bg {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 120px;
+      opacity: 0.3;
+    }
+
+    .anim-bg-right {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      width: 150px;
+      opacity: 0.3;
+      transform: rotate(10deg);
+    }
+
+    .logo img {
+      width: 90px;
+      margin-bottom: 1rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      text-shadow: 0 0 15px rgba(0,229,255,0.4);
+    }
+
+    .highlight-main {
+      background: linear-gradient(90deg, #00e5ff, #00ffa3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtagline {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #aeefff;
+      text-shadow: 0 0 10px rgba(0,229,255,0.3);
+      margin-bottom: 1.5rem;
+      animation: fadeGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeGlow {
+      0% { text-shadow: 0 0 5px rgba(0,229,255,0.3); }
+      50% { text-shadow: 0 0 15px rgba(0,229,255,0.6); }
+      100% { text-shadow: 0 0 5px rgba(0,229,255,0.3); }
+    }
+
+    .points {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 2rem;
+      z-index: 2;
+      position: relative;
+    }
+
+    .point {
+      background: rgba(255,255,255,0.15);
+      padding: 0.6rem 1rem;
+      border-radius: 25px;
+      width: fit-content;
+      font-size: 0.95rem;
+      color: #bdeaff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.3s ease;
+    }
+
+    .point:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-brand {
+      background-color: #00e5ff;
+      color: #00263b;
+      padding: 0.8rem 1.6rem;
+      border-radius: 40px;
+      border: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-brand:hover {
+      background-color: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid #00e5ff;
+      color: #00e5ff;
+      border-radius: 40px;
+      padding: 0.8rem 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline:hover {
+      background-color: #00e5ff;
+      color: #00263b;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #b8dcff;
+    }
+
+    .footer a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .address {
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+      color: #d2ecff;
+    }
+    .highlight-yellow {
+  color: #FFD700; /* Bright yellow */
+  text-shadow: 0 0 8px #FFD700, 0 0 15px #FFF59D;
+  font-weight: 700;
+}
+.highlight-red {
+  color: #FF4C4C; /* Bright red */
+  text-shadow: 0 0 8px #FF4C4C, 0 0 15px #FF7F7F;
+  font-weight: 700;
+}
+
+@keyframes fadeGlowRed {
+  0% { text-shadow: 0 0 5px #FF4C4C, 0 0 10px #FF7F7F; }
+  50% { text-shadow: 0 0 15px #FF4C4C, 0 0 25px #FF7F7F; }
+  100% { text-shadow: 0 0 5px #FF4C4C, 0 0 10px #FF7F7F; }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="ad-box">
+    <!-- Floating Lottie Animations -->
+    <lottie-player class="anim-bg"
+      src="https://assets5.lottiefiles.com/packages/lf20_8v7r1l6q.json"
+      background="transparent" speed="1" loop autoplay></lottie-player>
+
+    <lottie-player class="anim-bg-right"
+      src="https://assets3.lottiefiles.com/packages/lf20_kyu7xb1v.json"
+      background="transparent" speed="1" loop autoplay></lottie-player>
+
+    <div class="logo">
+      <img src="../img/logos/dsa.png" alt="DataSphere Logo">
+    </div>
+
+    <h1>Launch Your <span class="highlight-main">Tech Career</span> with DataSphere</h1>
+    <!--<p class="subtagline highlight-yellow">🌍 Build global tech skills — right here in Orai.</p>-->
+    <p class="subtagline highlight-yellow">🌍 Build global tech skills — right here in Orai.</p>
+
+
+    <div class="points">
+      <div class="point"><i class="bi bi-person-fill-up"></i> No prior experience required</div>
+      <div class="point"><i class="bi bi-building-check"></i> Offline classes at Sushil Nagar</div>
+      <div class="point"><i class="bi bi-tools"></i> Completely practical classes — from basics to advanced</div>
+    </div>
+
+    <div class="cta">
+      <a href="apply_cohort.html"><button class="btn-brand"><i class="bi bi-rocket-takeoff me-1"></i> Apply Now</button></a>
+      <a href="contact.html"><button class="btn-outline"><i class="bi bi-calendar-check me-1"></i> Book Free Demo</button></a>
+    </div>
+
+    <div class="footer">
+      <p>📞 +91 8608690640 | ✉️ <a href="mailto:dsa.ebts@gmail.com">dsa.ebts@gmail.com</a></p>
+      <p class="address"><i class="bi bi-geo-alt-fill me-1"></i> DataSphere Academy, Sushil Nagar, Orai, Uttar Pradesh, India</p>
+    </div>
+  </div>
+</body>
+</html>

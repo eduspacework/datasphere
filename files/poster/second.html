@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🚀 DataSphere – Where Data Meets Intelligence</title>
+  <meta name="description" content="Level up your career with DataSphere! Hands-on programs in Data Analytics, Data Science, AI/ML & Data Engineering. Learn. Analyze. Transform." />
+
+  <!-- Fonts & Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      color: #fff;
+      background: linear-gradient(135deg, #001F3F, #004488, #0077B6);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .poster {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .logo img {
+      width: 90px;
+      margin-bottom: 1rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    .highlight {
+      color: #00e5ff;
+      text-shadow: 0 0 10px rgba(0,229,255,0.6);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p.tagline {
+      font-size: 1.25rem;
+      color: #e0f7ff;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .course-box {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      width: 230px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .course-box:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.25);
+    }
+
+    .course-box h5 {
+      color: #fff;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .course-box small {
+      color: #b3e5fc;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn-brand {
+      background-color: #00e5ff;
+      color: #00334d;
+      border-radius: 50px;
+      padding: 0.9rem 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      transition: all 0.3s;
+    }
+
+    .btn-brand:hover {
+      background-color: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .btn-outline-light {
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 50px;
+      padding: 0.9rem 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #fff;
+      color: #003060;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #b0d6ff;
+      animation: fadeIn 3s ease;
+    }
+
+    footer a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .address {
+      font-size: 0.95rem;
+      color: #cde9ff;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="poster">
+    <div class="logo">
+      <img src="img/logos/dsa.png" alt="DataSphere Logo">
+    </div>
+
+    <h1>⚡ Where <span class="highlight">Data</span> Meets <span class="highlight">Intelligence</span></h1>
+    <p class="tagline">Transform your future with hands-on programs in <strong>Data Analytics</strong>, <strong>Data Science</strong>, <strong>AI / ML</strong>, and <strong>Data Engineering</strong> — built for real-world success!</p>
+
+    <div class="courses">
+      <div class="course-box">
+        <h5>📊 Data Analytics</h5>
+        <small>Excel · SQL · Power BI</small>
+      </div>
+      <div class="course-box">
+        <h5>🤖 Data Science & ML</h5>
+        <small>Python · Scikit-learn</small>
+      </div>
+      <div class="course-box">
+        <h5>💡 GenAI</h5>
+        <small>LLMs · Prompting · RAG</small>
+      </div>
+      <div class="course-box">
+        <h5>🛠 Data Engineering</h5>
+        <small>Spark · Airflow · Cloud</small>
+      </div>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="apply_cohort.html" class="btn-brand"><i class="bi bi-rocket-takeoff-fill me-1"></i> Apply Now</a>
+      <a href="contact.html" class="btn-outline-light"><i class="bi bi-calendar-check me-1"></i> Book Free Demo</a>
+    </div>
+
+    <footer class="mt-5">
+      <p>📞 +91 8608690640 | ✉️ <a href="mailto:dsa.ebts@gmail.com">dsa.ebts@gmail.com</a></p>
+      <p class="address"><i class="bi bi-geo-alt-fill me-1"></i> DataSphere Academy, Sushil Nagar, Orai, Uttar Pradesh, India</p>
+      <p>© <span id="year"></span> DataSphere Academy. All Rights Reserved.</p>
+    </footer>
+  </section>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
