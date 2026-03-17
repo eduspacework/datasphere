@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataSphere – Where Data Meets Intelligence</title>
+  <meta name="description" content="DataSphere Institute – Online courses in Data Analytics, Data Science, AI/ML, Data Engineering. Learn. Analyze. Transform." />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/banner.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/dsa_favicon.png">
+
+</head>
+
+<body>  <!-- NAVBAR (reuse same as index.html) -->
+  <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light">
+  <!--<nav class="navbar navbar-expand-lg py-3 fixed-top bg-transparent"> -->
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <!--<span class="d-inline-block rounded-md bg-brand p-2"><i class="bi bi-globe2 text-white"></i></span>
+        <img src="img/logos/dsa.png"/>-->
+        <img src="img/logos/dsa.png" alt="DSA Logo" width="50" height="50">
+
+        
+
+
+        <strong class="fs-4 text-brand">DataSphere</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          
+          <!--<li class="nav-item ms-lg-3"><a class="btn btn-brand" href="#book_demo">Book Demo</a></li>-->
+          
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#bookDemoModal">Book Demo</button>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- MAIN PAGE CONTENT - uses reference container sizing & theme classes -->
+  <main>
+
+    <div class="container">
+
+      <!-- Page header (keeps your original header info) -->
+      <header class="d-flex align-items-center justify-content-between mb-4">
+        <div class="d-flex align-items-center gap-3">
+          <div class="d-inline-block rounded-2xl bg-brand text-white d-flex align-items-center justify-content-center" style="width:56px;height:56px;font-weight:700;">DA</div>
+          <div>
+            <div style="font-weight:700; font-size:1.15rem;">Data Analytics Bootcamp</div>
+            <div style="font-size:13px;color:var(--text-muted)">Excel · SQL · Power BI · Tableau — 12 Weeks</div>
+          </div>
+        </div>
+        <nav>
+          <a class="btn btn-brand" href="#apply">Apply Now</a>
+        </nav>
+      </header>
+
+      <!-- Hero-like top section (keeps your original hero grid, but uses theme classes) -->
+      <div class="hero" style="margin-bottom:24px">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <div class="card rounded-2xl shadow-soft p-4">
+              <div class="d-flex gap-2 mb-3">
+                <span class="pill" style="background:var(--brand-light);color:var(--brand);">12 Weeks</span>
+                <span class="pill" style="background:var(--brand-light);color:var(--brand);">Hands-On</span>
+                <span class="pill" style="background:var(--brand-light);color:var(--brand);">Project-Led</span>
+              </div>
+
+              <h1 class="mb-2" style="font-size:28px;">Data Analytics Bootcamp</h1>
+              <p class="text-muted mb-3">Learn practical Excel, SQL, Power BI and Tableau skills used by data teams. Build a portfolio-ready capstone, get mentor support and career guidance.</p>
+
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <div class="badge bg-light text-dark small">Duration: <strong>12 weeks</strong></div>
+                <div class="badge bg-light text-dark small">Format: <strong>Live classes + labs</strong></div>
+                <div class="badge bg-light text-dark small">Level: <strong>Beginner → Job-ready</strong></div>
+              </div>
+
+              <h2 class="mt-3">Program Snapshot</h2>
+              <p>This intensive 12-week bootcamp teaches you the full toolkit data analysts use at work: advanced Excel for analysis & automation, SQL for data extraction and transformation, and modern BI tools (Power BI & Tableau) for visualization and storytelling. Focused on hands-on labs, weekly projects, and a final capstone.</p>
+
+              <h3 class="mt-3">What you'll learn</h3>
+              <ul class="checks">
+                <li>Advanced Excel (pivot tables, Power Query, formulas & automation)</li>
+                <li>SQL (SELECT, JOINs, window functions, CTEs, aggregation, performance tips)</li>
+                <li>Power BI (data modeling, DAX, interactive dashboards, deployment)</li>
+                <li>Tableau (visual best practices, calculated fields, storytelling)</li>
+                <li>Data cleaning & ETL concepts; working with CSV, Excel, relational data</li>
+                <li>Business metrics, KPIs, and analytics thinking</li>
+                <li>Capstone project: real dataset, full pipeline, presentation-ready dashboard</li>
+              </ul>
+
+              <h3 class="mt-3">Who is this for?</h3>
+              <p class="text-muted">Career switchers, fresh grads, business professionals, and anyone who wants to analyze data and build dashboards. No prior programming experience required.</p>
+
+              <h3 class="mt-3">Prerequisites</h3>
+              <ul>
+                <li>Basic comfort with spreadsheets</li>
+                <li>A laptop (Windows or macOS) and internet connection</li>
+                <li>Commit ~8–12 hours/week</li>
+              </ul>
+
+              <h2 class="mt-3">Outcomes & Career Support</h2>
+              <ul class="checks">
+                <li>Build 4+ portfolio projects including a capstone dashboard</li>
+                <li>1:1 resume & interview coaching sessions</li>
+                <li>Access to a hiring network and placement guidance</li>
+                <li>Certificate of Completion and technical assessment report</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="card rounded-2xl shadow-soft p-4">
+              <h5 class="text-brand mb-2">Quick Details</h5>
+              <p class="mb-1"><strong>Start Date:</strong> Rolling cohorts — check application for next intake</p>
+              <p class="mb-1"><strong>Duration:</strong> 12 Weeks</p>
+              <p class="mb-1"><strong>Effort:</strong> 8-12 hours / week</p>
+              <p class="mb-3"><strong>Mode:</strong> Live instructor sessions + recorded lessons + labs</p>
+
+              <div class="d-grid mb-3">
+                <a class="btn btn-brand" href="#apply">Apply Now</a>
+                <a class="btn btn-outline-dark mt-2" href="#curriculum">View Curriculum</a>
+              </div>
+
+              <hr />
+
+              <h6 class="mb-2">Tuition & Financing</h6>
+              <p class="text-muted small">Flexible payment plans, scholarships and early-bird discounts may be available. Contact admissions for current pricing.</p>
+
+              <h6 class="mb-2">Contact</h6>
+              <p class="mb-0 small"><i class="bi bi-envelope me-2"></i> <a href="mailto:dsa.ebts@gmail.com">dsa.ebts@gmail.com</a></p>
+              <p class="mb-0 small"><i class="bi bi-telephone me-2"></i> +91 86086 90640</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curriculum section (keeps your structure) -->
+      <section id="curriculum" class="mb-4">
+        <div class="card rounded-2xl shadow-soft p-4 curriculum">
+          <h2>12-Week Curriculum</h2>
+          <p class="text-muted">Each week includes live sessions, hands-on labs, and a short project or assignment.</p>
+
+          <div class="mt-3">
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 1 — Excel Foundations</strong><div class="text-muted small">Sheets, formatting, basic formulas, shortcuts, data entry best practices.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 2 — Excel Advanced</strong><div class="text-muted small">PivotTables, conditional formatting, named ranges, array formulas.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 3 — Power Query & Data Cleaning</strong><div class="text-muted small">Importing data, cleaning, merging, unpivot, automation with Power Query.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 4 — SQL Basics</strong><div class="text-muted small">SELECT, WHERE, ORDER BY, GROUP BY, aggregate functions.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 5 — SQL Intermediate</strong><div class="text-muted small">JOINs, subqueries, window functions, CTEs, best practices.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 6 — SQL for Analytics & Performance</strong><div class="text-muted small">Indexes, explain plans, writing analytic queries.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 7 — Data Modeling & Power BI Intro</strong><div class="text-muted small">Star schemas, relationships, Power BI Desktop basics.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 8 — DAX & Power BI Dashboards</strong><div class="text-muted small">Measures, calculated columns, time intelligence, interactive visuals.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 9 — Tableau Fundamentals</strong><div class="text-muted small">Connecting data, basic charts, calculated fields, filters & parameters.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 10 — Tableau Advanced & Storytelling</strong><div class="text-muted small">LOD expressions, dashboard actions, designing a narrative dashboard.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 11 — Capstone Project Work</strong><div class="text-muted small">Project planning, ETL, analysis, dashboards. Weekly mentor check-ins.</div></div>
+            <div class="week p-3 mb-2 bg-white rounded-2xl shadow-soft"><strong>Week 12 — Project Presentation & Hiring Prep</strong><div class="text-muted small">Final presentations, portfolio polish, resume & interview workshops.</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects & support (keeps original grid) -->
+      <section class="row g-4">
+        <div class="col-lg-8">
+          <div class="card rounded-2xl shadow-soft p-4">
+            <h2>Capstone & Projects</h2>
+            <p>The capstone is an instructor-guided, industry-aligned project: you will ingest raw data, perform ETL, write analysis queries, design KPIs, and build an interactive dashboard (Power BI or Tableau). Projects are team or individual and are meant to go directly into your portfolio.</p>
+
+            <h3>Sample project ideas</h3>
+            <ul>
+              <li>Sales performance dashboard with regional drill-downs and cohort analysis</li>
+              <li>Customer churn analysis with retention recommendations</li>
+              <li>Operational metrics dashboard for a small SaaS product</li>
+            </ul>
+
+            <h3>Assessment</h3>
+            <p>Weekly assignments, a mid-program technical test, and a final capstone evaluation. Students receive a technical feedback report and certificate on completion.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <aside class="card rounded-2xl shadow-soft p-4">
+            <h3>Program Support</h3>
+            <div class="instructors d-flex flex-column gap-3">
+              <div class="instr d-flex align-items-center gap-3">
+                <div class="rounded-2xl d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:var(--brand-light);color:var(--brand);font-weight:700">DS</div>
+                <div>
+                  <strong>Data Science Experts</strong>
+                  <div class="text-muted small">Guidance from industry professionals in ML & Analytics</div>
+                </div>
+              </div>
+
+              <div class="instr d-flex align-items-center gap-3">
+                <div class="rounded-2xl d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:#fff0f6;color:#c026d3;font-weight:700">ML</div>
+                <div>
+                  <strong>ML Practitioners</strong>
+                  <div class="text-muted small">Support for projects, debugging, and best practices</div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-3">Mentorship</h4>
+            <p class="text-muted small">Weekly office hours, Q&A sessions, and project feedback to help you succeed in the program.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Apply / How to Apply -->
+      <section id="apply" class="mt-4">
+        <div class="card rounded-2xl shadow-soft p-4">
+          <h2>How to Apply</h2>
+          <ol class="ps-3">
+            <li>Fill out the application form with your basic details and background information.</li>
+            <li>Complete the course payment of <strong>₹9,500/-</strong> to confirm your enrollment. Multiple payment options are available.</li>
+            <li>Receive your official <strong>admission letter</strong> after payment confirmation.</li>
+            <li>Start attending classes, available <strong>both online and offline</strong> according to your preference.</li>
+          </ol>
+
+          <h3 class="mt-3">Refund & Cancellation</h3>
+          <p class="text-muted">Full refund if cancelled within 7 days of enrollment and before course start. Contact admissions for details.</p>
+
+          <div class="mt-3">
+            <a class="btn btn-brand" href="apply_cohort.html">Application Form</a>
+          </div>
+        </div>
+      </section>
+
+
+    </div> <!-- /.container -->
+
+  </main>
+    <!-- small safe adjustments to avoid overlap with fixed navbar -->
+  <style>
+    /* keep everything else to the reference CSS; only small page-level tweak */
+    body { padding-top: 88px; } /* make room for fixed-top navbar */
+    /* ensure pills used in this page (if style.css doesn't include) */
+    .pill { display:inline-block; padding:.35rem .75rem; border-radius:999px; font-weight:600; }
+    /* fallback for .rounded-2xl and .shadow-soft if missing */
+    .rounded-2xl { border-radius: 1rem !important; }
+    .shadow-soft { box-shadow: 0 6px 22px rgba(12,15,20,0.06) !important; }
+  </style>
+
+  <script>
+    // auto-update year (footer)
+    (function(){ var el = document.getElementById('year'); if(el) el.textContent = new Date().getFullYear(); })();
+  </script>  <!-- FOOTER -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="d-inline-block rounded-2xl bg-brand p-2"><i class="bi bi-globe2 text-white"></i></span>
+            <strong class="fs-5">DataSphere</strong>
+          </div>
+          <p class="mb-2">Where Data Meets Intelligence.</p>
+          <div class="d-flex gap-3 fs-5">
+            <!--<a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>-->
+            <a href="https://www.linkedin.com/company/datasphereacademy" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <!--<a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>-->
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <!-- <li><a href="partners.html">Partners</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase">Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="da_bootcamp.html">Data Analytics</a></li>
+            <li><a href="ds_ml.html">Data Science</a></li>
+            <li><a href="genai.html">GenAI</a></li>
+            <li><a href="de.html">Data Engineering</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-uppercase">Contact</h6>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-envelope me-2"></i> dsa.ebts@gmail.com </li>
+            <li><i class="bi bi-telephone me-2"></i> +91 8608690640</li>
+            <li><i class="bi bi-geo-alt me-2"></i> DataSphere Acadamy, Sushil Nagar, Orai, India</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary border-opacity-25 my-4"/>
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small">
+        <div>© <span id="year"></span> <a href="#">DataSphere Academy.</a> All rights reserved.</div>
+        <div class="mt-2 mt-sm-0"><a href="privacy_policy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+<!-- BOOK DEMO MODAL -->
+<div class="modal fade" id="bookDemoModal" tabindex="-1" aria-labelledby="bookDemoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+        <h5 class="modal-title text-brand" id="bookDemoLabel"><i class="bi bi-calendar-check me-2"></i>Book a Free Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted mb-3">Fill in your details to schedule a free demo session with our mentors.</p>
+        
+
+        <form id="bookDemoForm">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <input id="firstName" name="firstName" class="form-control" placeholder="First name" required>
+          </div>
+          <div class="col-12 col-md-6">
+            <input id="lastName" name="lastName" class="form-control" placeholder="Last name" required>
+          </div>
+          <div class="col-12">
+            <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="col-12">
+            <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone number" required>
+          </div>
+          <div class="col-12">
+            <select id="program" name="program" class="form-select" required>
+              <option value="" disabled selected>Choose a program</option>
+              <option value="Data Analytics">Data Analytics</option>
+              <option value="Data Science">Data Science</option>
+              <option value="AI / Machine Learning">AI / Machine Learning</option>
+              <option value="Data Engineering">Data Engineering</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <input id="preferredDate" type="date" name="preferredDate" class="form-control" required>
+          </div>
+          <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-brand btn-lg">Book Demo</button>
+          </div>
+        </div>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/banner.js"></script>
+
+
+<script src="js/bd_form.js"></script>
+<script src="js/contact_form.js"></script>
+<script src="js/callback_form.js"></script>
+
+<script src="js/apply_form.js"></script>
+<script src="js/brochure_form.js"></script>
+
+
+
+</body>
+</html>

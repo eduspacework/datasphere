@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataSphere – Where Data Meets Intelligence</title>
+  <meta name="description" content="DataSphere Institute – Online courses in Data Analytics, Data Science, AI/ML, Data Engineering. Learn. Analyze. Transform." />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/banner.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/dsa_favicon.png">
+
+</head>
+
+<body>  <!-- NAVBAR (reuse same as index.html) -->
+  <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light">
+  <!--<nav class="navbar navbar-expand-lg py-3 fixed-top bg-transparent"> -->
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <!--<span class="d-inline-block rounded-md bg-brand p-2"><i class="bi bi-globe2 text-white"></i></span>
+        <img src="img/logos/dsa.png"/>-->
+        <img src="img/logos/dsa.png" alt="DSA Logo" width="50" height="50">
+
+        
+
+
+        <strong class="fs-4 text-brand">DataSphere</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          
+          <!--<li class="nav-item ms-lg-3"><a class="btn btn-brand" href="#book_demo">Book Demo</a></li>-->
+          
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#bookDemoModal">Book Demo</button>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- HERO / PAGE HEADER -->
+  <header class="pt-7 pb-5 bg-light text-center mt-5">
+    <br>
+    <br>
+
+    <div class="container">
+    <br>
+      <div class="eyebrow text-brand mb-2">Application Form</div>
+      <h1 class="fw-bold mb-3" style="color:var(--text-dark)">Apply for Our Data Programs</h1>
+      <p class="text-muted mx-auto" style="max-width:700px;">Join our upcoming cohorts in Data Analytics, Data Science, GenAI, or Data Engineering. Fill out the form below to start your journey.</p>
+    </div>
+  </header>
+
+  <!-- PROGRAM CARDS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/courses/dabc.jpg" class="card-img-top rounded-top-3" alt="Data Analytics Bootcamp">
+            <div class="card-body">
+              <h5 class="card-title">Data Analytics Bootcamp</h5>
+              <p class="text-muted small">Excel · SQL · Power BI · Tableau</p>
+              <span class="pill"><i class="bi bi-clock me-1"></i>12 Weeks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/courses/dsml.jpg" class="card-img-top rounded-top-3" alt="Data Science & ML">
+            <div class="card-body">
+              <h5 class="card-title">Data Science & ML</h5>
+              <p class="text-muted small">Python · Pandas · Scikit-learn · NLP</p>
+              <span class="pill"><i class="bi bi-clock me-1"></i>16 Weeks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/courses/genai.jpg" class="card-img-top rounded-top-3" alt="GenAI for Developers">
+            <div class="card-body">
+              <h5 class="card-title">GenAI for Developers</h5>
+              <p class="text-muted small">LLMs · Prompting · RAG · LLMOps</p>
+              <span class="pill"><i class="bi bi-clock me-1"></i>8 Weeks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/courses/de.jpg" class="card-img-top rounded-top-3" alt="Data Engineering">
+            <div class="card-body">
+              <h5 class="card-title">Data Engineering</h5>
+              <p class="text-muted small">Airflow · Spark · Warehousing</p>
+              <span class="pill"><i class="bi bi-clock me-1"></i>14 Weeks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="py-6 py-lg-7" style="background:var(--bg-soft)">
+  <br>
+    <div class="container">
+      <div class="section-head text-center mb-5">
+        <br>
+        <div class="eyebrow mb-2 text-brand">Application</div>
+        <h2 class="fw-bold" style="color:var(--text-dark)">Tell Us About You</h2>
+        <p class="text-muted mx-auto" style="max-width:700px;">Our admissions team will review your profile and contact you within 2–3 business days.</p>
+      </div>
+
+      <div class="card shadow-soft border-0 p-4 p-lg-5 mx-auto" style="max-width: 800px;">
+
+
+      <form id="applicationForm" novalidate>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label fw-semibold" for="FullName">Full Name</label>
+          <input type="text" id="FullName" class="form-control" name="FullName" required placeholder="Your name">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold" for="Email">Email</label>
+          <input type="email" id="Email" class="form-control" name="Email" required placeholder="you@email.com">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold" for="Phone">Phone Number</label>
+          <input type="tel" id="Phone" class="form-control" name="Phone" required placeholder="+91 90000 00000">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold" for="Location">City / Country</label>
+          <input type="text" id="Location" class="form-control" name="Location" required placeholder="e.g., Bangalore, India">
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label fw-semibold" for="Program">Program Applying For</label>
+          <select id="Program" class="form-select" name="Program" required>
+            <option value="" disabled selected>Select Program</option>
+            <option>Data Analytics Bootcamp</option>
+            <option>Data Science & ML</option>
+            <option>GenAI for Developers</option>
+            <option>Data Engineering</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold" for="PreferredMonth">Preferred Start Month</label>
+          <input type="month" id="PreferredMonth" class="form-control" name="PreferredMonth" required>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label fw-semibold" for="Qualification">Highest Qualification</label>
+          <input type="text" id="Qualification" class="form-control" name="Qualification" required placeholder="e.g., B.Tech in Computer Science">
+        </div>
+        <div class="col-12">
+          <label class="form-label fw-semibold" for="Experience">Experience in Data / Programming</label>
+          <select id="Experience" class="form-select" name="Experience" required>
+            <option value="" disabled selected>Select</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label fw-semibold" for="Background">Briefly Describe Your Background</label>
+          <textarea id="Background" class="form-control" name="Background" rows="3" placeholder="Tell us about your experience and interests"></textarea>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label fw-semibold" for="Motivation">Why do you want to join this program?</label>
+          <textarea id="Motivation" class="form-control" name="Motivation" rows="3" placeholder="Share your motivation"></textarea>
+        </div>
+        <div class="col-12">
+          <label class="form-label fw-semibold" for="CareerGoals">Career Goals after completion</label>
+          <textarea id="CareerGoals" class="form-control" name="CareerGoals" rows="2" placeholder="e.g., Become a Data Analyst, ML Engineer, etc."></textarea>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label fw-semibold" for="Resume">Upload Resume (optional)</label>
+          <input type="file" id="Resume" class="form-control" name="Resume" accept=".pdf,.doc,.docx">
+        </div>
+
+        <div class="col-12 d-grid">
+          <button class="btn btn-brand btn-lg mt-3" type="submit">Submit Application</button>
+        </div>
+      </div>
+    </form>
+
+
+
+      </div>
+    </div>
+  </section>  <!-- FOOTER -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="d-inline-block rounded-2xl bg-brand p-2"><i class="bi bi-globe2 text-white"></i></span>
+            <strong class="fs-5">DataSphere</strong>
+          </div>
+          <p class="mb-2">Where Data Meets Intelligence.</p>
+          <div class="d-flex gap-3 fs-5">
+            <!--<a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>-->
+            <a href="https://www.linkedin.com/company/datasphereacademy" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <!--<a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>-->
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <!-- <li><a href="partners.html">Partners</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase">Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="da_bootcamp.html">Data Analytics</a></li>
+            <li><a href="ds_ml.html">Data Science</a></li>
+            <li><a href="genai.html">GenAI</a></li>
+            <li><a href="de.html">Data Engineering</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-uppercase">Contact</h6>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-envelope me-2"></i> dsa.ebts@gmail.com </li>
+            <li><i class="bi bi-telephone me-2"></i> +91 8608690640</li>
+            <li><i class="bi bi-geo-alt me-2"></i> DataSphere Acadamy, Sushil Nagar, Orai, India</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary border-opacity-25 my-4"/>
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small">
+        <div>© <span id="year"></span> <a href="#">DataSphere Academy.</a> All rights reserved.</div>
+        <div class="mt-2 mt-sm-0"><a href="privacy_policy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+<!-- BOOK DEMO MODAL -->
+<div class="modal fade" id="bookDemoModal" tabindex="-1" aria-labelledby="bookDemoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+        <h5 class="modal-title text-brand" id="bookDemoLabel"><i class="bi bi-calendar-check me-2"></i>Book a Free Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted mb-3">Fill in your details to schedule a free demo session with our mentors.</p>
+        
+
+        <form id="bookDemoForm">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <input id="firstName" name="firstName" class="form-control" placeholder="First name" required>
+          </div>
+          <div class="col-12 col-md-6">
+            <input id="lastName" name="lastName" class="form-control" placeholder="Last name" required>
+          </div>
+          <div class="col-12">
+            <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="col-12">
+            <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone number" required>
+          </div>
+          <div class="col-12">
+            <select id="program" name="program" class="form-select" required>
+              <option value="" disabled selected>Choose a program</option>
+              <option value="Data Analytics">Data Analytics</option>
+              <option value="Data Science">Data Science</option>
+              <option value="AI / Machine Learning">AI / Machine Learning</option>
+              <option value="Data Engineering">Data Engineering</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <input id="preferredDate" type="date" name="preferredDate" class="form-control" required>
+          </div>
+          <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-brand btn-lg">Book Demo</button>
+          </div>
+        </div>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/banner.js"></script>
+
+
+<script src="js/bd_form.js"></script>
+<script src="js/contact_form.js"></script>
+<script src="js/callback_form.js"></script>
+
+<script src="js/apply_form.js"></script>
+<script src="js/brochure_form.js"></script>
+
+
+
+</body>
+</html>

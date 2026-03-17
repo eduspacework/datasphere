@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataSphere – Where Data Meets Intelligence</title>
+  <meta name="description" content="DataSphere Institute – Online courses in Data Analytics, Data Science, AI/ML, Data Engineering. Learn. Analyze. Transform." />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/banner.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/dsa_favicon.png">
+
+</head>
+
+<body>  <!-- NAVBAR (reuse same as index.html) -->
+  <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light">
+  <!--<nav class="navbar navbar-expand-lg py-3 fixed-top bg-transparent"> -->
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <!--<span class="d-inline-block rounded-md bg-brand p-2"><i class="bi bi-globe2 text-white"></i></span>
+        <img src="img/logos/dsa.png"/>-->
+        <img src="img/logos/dsa.png" alt="DSA Logo" width="50" height="50">
+
+        
+
+
+        <strong class="fs-4 text-brand">DataSphere</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          
+          <!--<li class="nav-item ms-lg-3"><a class="btn btn-brand" href="#book_demo">Book Demo</a></li>-->
+          
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#bookDemoModal">Book Demo</button>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Moving Banner -->
+    <div id="top-banner">
+        <span id="moving-text">🚀 Join Our Programs Today! Call Now at <a href="tel:1234567890" style="color:white; text-decoration:underline;">123-456-7890</a> & Apply – Limited Seats Available! 🎓</span>
+    </div>
+  
+  <!-- HERO -->
+  <header class="hero position-relative pt-6" style="min-height: 88vh;">
+    <div class="hero-overlay position-absolute top-0 start-0 end-0 bottom-0"></div>
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center" style="min-height: 80vh;">
+        <div class="col-lg-7 py-5">
+          <span class="pill shadow-soft mb-3"><i class="bi bi-lightning-charge"></i> New Cohort Starts Dec 1</span>
+          <h1 class="display-4 lh-tight mb-3">Where <span class="text-brand">Data</span> Meets Intelligence</h1>
+          <p class="mb-4">Industry-ready programs in <strong>Data Analytics</strong>, <strong>Data Science</strong>, <strong>AI/ML</strong>, and <strong>Data Engineering</strong>. Learn by doing, guided by expert mentors.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#courses" class="btn btn-brand btn-lg"><i class="bi bi-play-circle me-1"></i> Explore Courses</a>
+            <a href="#brochure" class="btn btn-outline-dark btn-lg"><i class="bi bi-file-earmark-arrow-down me-1"></i> Download Brochure</a>
+          </div>
+          <div class="d-flex gap-4 align-items-center mt-4 text-muted small">
+            <div><i class="bi bi-people-fill me-1 text-brand"></i> 8,000+ learners</div>
+            <div><i class="bi bi-briefcase-fill me-1 text-brand"></i> 300+ hiring partners</div>
+            <div><i class="bi bi-star-fill me-1 text-brand"></i> 4.8/5 avg rating</div>
+          </div>
+        </div>
+        <div class="col-lg-5 py-5">
+          <div class="bg-white rounded-2xl p-4 p-lg-5 shadow-soft">
+            <h5 class="mb-1 text-brand">Get a free career consultation</h5>
+            <p class="text-muted mb-3">Tell us about your goals. We’ll suggest the best path.</p>
+
+            <form id="requestCallBackForm">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First name" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last name" required>
+              </div>
+              <div class="col-12">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="col-12">
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone">
+              </div>
+              <div class="col-12">
+                <select id="interest" name="interest" class="form-select" required>
+                  <option value="" disabled selected>I'm interested in…</option>
+                  <option value="Data Analytics">Data Analytics</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="AI / Machine Learning">AI / Machine Learning</option>
+                  <option value="Data Engineering">Data Engineering</option>
+                </select>
+              </div>
+              <div class="col-12 d-grid">
+                <button type="submit" class="btn btn-brand btn-lg">Request Callback</button>
+              </div>
+              <div class="col-12 small text-muted">
+                By submitting, you agree to our Terms & Privacy.
+              </div>
+            </div>
+          </form>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-6 py-lg-7" style="background:var(--bg-soft)">
+    <div class="container">
+      <div class="section-head text-center">
+      <br>
+        <div class="eyebrow mb-2">Why DataSphere</div>
+        <h2 class="fw-bold mb-3" style="color:var(--text-dark)">Built for Real-World Outcomes</h2>
+        <p class="text-muted mx-auto" style="max-width: 760px;">
+          Curriculum designed with industry input, hands-on projects, and career support that takes you from beginner to job-ready. 
+          Our course fees start from <strong>INR 9500 /-</strong> and may vary based on individual learning requirements and program selection.
+        </p>
+
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4">
+            <div class="icon-bubble mb-3"><i class="bi bi-broadcast-pin fs-4"></i></div>
+            <h5 class="card-title">Live + On‑Demand</h5>
+            <p class="text-muted">Flexible cohort sessions and curated recordings so you never miss a beat.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4">
+            <div class="icon-bubble mb-3"><i class="bi bi-diagram-3 fs-4"></i></div>
+            <h5 class="card-title">Mentorship</h5>
+            <p class="text-muted">1:1 mentor check‑ins and code reviews from experienced data professionals.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4">
+            <div class="icon-bubble mb-3"><i class="bi bi-graph-up-arrow fs-4"></i></div>
+            <h5 class="card-title">Job Assistance</h5>
+            <p class="text-muted">Interview prep, portfolio projects, referrals to 300+ partner companies.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 p-4">
+            <div class="icon-bubble mb-3"><i class="bi bi-shield-check fs-4"></i></div>
+            <h5 class="card-title">Certificates</h5>
+            <p class="text-muted">Earn shareable certificates verified by DataSphere and partners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="py-6 py-lg-7">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
+        <div>
+        <br>
+          <div class="eyebrow mb-2">Popular Tracks</div>
+          <h2 class="fw-bold" style="color:var(--text-dark)">Choose Your Learning Path</h2>
+        </div>
+        <a href="#apply" class="btn btn-brand">View All Cohorts</a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="img/courses/dabc.jpg" class="card-img-top" alt="Data Analytics">
+            <div class="card-body">
+              <h5 class="card-title">Data Analytics Bootcamp</h5>
+              <p class="card-text text-muted">Excel · SQL · Power BI · Tableau</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pill"><i class="bi bi-clock"></i> 12 Weeks</span>
+                <a class="link-brand" href="da_bootcamp.html">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="img/courses/dsml.jpg" class="card-img-top" alt="Data Science">
+            <div class="card-body">
+              <h5 class="card-title">Data Science & ML</h5>
+              <p class="card-text text-muted">Python · Pandas · Scikit‑learn · NLP</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pill"><i class="bi bi-clock"></i> 16 Weeks</span>
+                <a class="link-brand" href="ds_ml.html">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="img/courses/genai.jpg" class="card-img-top" alt="GenAI">
+            <div class="card-body">
+              <h5 class="card-title">GenAI for Developers</h5>
+              <p class="card-text text-muted">LLMs · Prompting · RAG · LLMOps</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pill"><i class="bi bi-clock"></i> 8 Weeks</span>
+                <a class="link-brand" href="genai.html">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="img/courses/de.jpg" class="card-img-top" alt="Data Engineering">
+            <div class="card-body">
+              <h5 class="card-title">Data Engineering</h5>
+              <p class="card-text text-muted">Airflow · Spark · Warehousing</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pill"><i class="bi bi-clock"></i> 14 Weeks</span>
+                <a class="link-brand" href="de.html">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section id="outcomes" class="py-6 py-lg-7" style="background:var(--bg-soft)">
+    <div class="container">
+      <div class="section-head text-center">
+      <br>
+        <div class="eyebrow mb-2">Career Impact</div>
+        <h2 class="fw-bold mb-3" style="color:var(--text-dark)">Outcomes that Matter</h2>
+        <p class="text-muted mx-auto" style="max-width:760px;">Average salary uplift, portfolio-ready capstones, and interview coaching. Join graduates hired by top teams.</p>
+      </div>
+
+      <div class="row text-center g-4 mb-4">
+        <div class="col-6 col-lg-3">
+          <div class="p-4 bg-white rounded-2xl shadow-soft h-100">
+            <div class="display-6 fw-bold text-brand">92%</div>
+            <div class="text-muted">Placement Rate</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 bg-white rounded-2xl shadow-soft h-100">
+            <div class="display-6 fw-bold text-brand">300+</div>
+            <div class="text-muted">Hiring Partners</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 bg-white rounded-2xl shadow-soft h-100">
+            <div class="display-6 fw-bold text-brand">25+</div>
+            <div class="text-muted">Capstone Projects</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 bg-white rounded-2xl shadow-soft h-100">
+            <div class="display-6 fw-bold text-brand">4.8/5</div>
+            <div class="text-muted">Learner Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-center justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2"><img class="img-fluid opacity-75" src="img/test.jpg" alt=""/></div>
+        <div class="col-6 col-md-3 col-lg-2"><img class="img-fluid opacity-75" src="img/test.jpg" alt=""/></div>
+        <div class="col-6 col-md-3 col-lg-2"><img class="img-fluid opacity-75" src="img/test.jpg" alt=""/></div>
+        <div class="col-6 col-md-3 col-lg-2"><img class="img-fluid opacity-75" src="img/test.jpg" alt=""/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-6 py-lg-7">
+    <div class="container">
+      <div class="section-head text-center">
+      <br>
+        <div class="eyebrow mb-2">Student Voices</div>
+        <h2 class="fw-bold mb-3" style="color:var(--text-dark)">What Our Learners Say</h2>
+        <p class="text-muted mx-auto" style="max-width:760px;">Real stories from graduates who transformed their careers with DataSphere.</p>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="card p-4 p-lg-5">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <!--<img src="" class="rounded-circle" width="56" height="56" alt="" />-->
+                    <div>
+                      <strong>Riya Sharma</strong>
+                      <div class="text-muted small">Data Analyst @ FinTech Co.</div>
+                    </div>
+                  </div>
+                  <blockquote class="mb-0"><span class="quote-mark">“</span> The projects and mentor sessions gave me the confidence to crack SQL and Power BI interviews. I landed an offer within 6 weeks of graduating! <span class="quote-mark">”</span></blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="card p-4 p-lg-5">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <!--<img src="" class="rounded-circle" width="56" height="56" alt="" />-->
+                    <div>
+                      <strong>Aditya Verma</strong>
+                      <div class="text-muted small">ML Engineer @ SaaS Startup</div>
+                    </div>
+                  </div>
+                  <blockquote class="mb-0"><span class="quote-mark">“</span> Loved the GenAI module! Building a RAG app for my capstone was a superpower during interviews. <span class="quote-mark">”</span></blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA RIBBON -->
+  <section id="apply" class="cta-ribbon text-white py-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <h3 class="mb-1">Ready to level up with DataSphere?</h3>
+          <p class="mb-0 text-white-50">Next cohorts open for Data Analytics, Data Science, GenAI, and Data Engineering.</p>
+        </div>
+        <div class="col-lg-4 d-grid d-sm-flex gap-3 justify-content-lg-end">
+          <a class="btn btn-light btn-lg" href="apply_cohort.html">Apply Now</a>
+          <a class="btn btn-outline-light btn-lg" href="#brochure">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / BROCHURE -->
+  <section id="brochure" class="py-6 py-lg-7" style="background:var(--bg-soft)">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h4 class="text-brand mb-2">Stay in the loop</h4>
+          <h2 class="fw-bold" style="color:var(--text-dark)">Get the syllabus & updates</h2>
+          <p class="text-muted">We’ll send you the latest syllabus, scholarships, and cohort dates.</p>
+
+        <form id="brochureForm" class="row g-2">
+        <div class="col-12 col-md-8">
+          <input type="email" id="Email" "name="Email" class="form-control form-control-lg"
+                placeholder="Enter your email" required>
+        </div>
+        <div class="col-12 col-md-4 d-grid">
+          <button class="btn btn-brand btn-lg" type="submit">Send Brochure</button>
+        </div>
+      </form>
+        <p id="formMessage" style="margin-top: 1rem; color: green;"></p>
+
+
+          <div class="small text-muted mt-2">No spam. Unsubscribe anytime.</div>
+        </div>
+        <div class="col-lg-6">
+          <img class="w-100 rounded-2xl shadow-soft" src="img/main.jpg" alt="">
+        </div>
+        <br>
+      </div>
+    </div>
+  </section>  <!-- FOOTER -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="d-inline-block rounded-2xl bg-brand p-2"><i class="bi bi-globe2 text-white"></i></span>
+            <strong class="fs-5">DataSphere</strong>
+          </div>
+          <p class="mb-2">Where Data Meets Intelligence.</p>
+          <div class="d-flex gap-3 fs-5">
+            <!--<a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>-->
+            <a href="https://www.linkedin.com/company/datasphereacademy" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <!--<a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>-->
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <!-- <li><a href="partners.html">Partners</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase">Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="da_bootcamp.html">Data Analytics</a></li>
+            <li><a href="ds_ml.html">Data Science</a></li>
+            <li><a href="genai.html">GenAI</a></li>
+            <li><a href="de.html">Data Engineering</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-uppercase">Contact</h6>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-envelope me-2"></i> dsa.ebts@gmail.com </li>
+            <li><i class="bi bi-telephone me-2"></i> +91 8608690640</li>
+            <li><i class="bi bi-geo-alt me-2"></i> DataSphere Acadamy, Sushil Nagar, Orai, India</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary border-opacity-25 my-4"/>
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small">
+        <div>© <span id="year"></span> <a href="#">DataSphere Academy.</a> All rights reserved.</div>
+        <div class="mt-2 mt-sm-0"><a href="privacy_policy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+<!-- BOOK DEMO MODAL -->
+<div class="modal fade" id="bookDemoModal" tabindex="-1" aria-labelledby="bookDemoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+        <h5 class="modal-title text-brand" id="bookDemoLabel"><i class="bi bi-calendar-check me-2"></i>Book a Free Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted mb-3">Fill in your details to schedule a free demo session with our mentors.</p>
+        
+
+        <form id="bookDemoForm">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <input id="firstName" name="firstName" class="form-control" placeholder="First name" required>
+          </div>
+          <div class="col-12 col-md-6">
+            <input id="lastName" name="lastName" class="form-control" placeholder="Last name" required>
+          </div>
+          <div class="col-12">
+            <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="col-12">
+            <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone number" required>
+          </div>
+          <div class="col-12">
+            <select id="program" name="program" class="form-select" required>
+              <option value="" disabled selected>Choose a program</option>
+              <option value="Data Analytics">Data Analytics</option>
+              <option value="Data Science">Data Science</option>
+              <option value="AI / Machine Learning">AI / Machine Learning</option>
+              <option value="Data Engineering">Data Engineering</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <input id="preferredDate" type="date" name="preferredDate" class="form-control" required>
+          </div>
+          <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-brand btn-lg">Book Demo</button>
+          </div>
+        </div>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/banner.js"></script>
+
+
+<script src="js/bd_form.js"></script>
+<script src="js/contact_form.js"></script>
+<script src="js/callback_form.js"></script>
+
+<script src="js/apply_form.js"></script>
+<script src="js/brochure_form.js"></script>
+
+
+
+</body>
+</html>
