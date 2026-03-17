@@ -1,0 +1,19 @@
+    /* Top moving banner */
+      #top-banner {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        #moving-text {
+            display: inline-block;
+            white-space: nowrap;
+        }
