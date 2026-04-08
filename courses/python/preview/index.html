@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Python Course Flyer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 780px;
+      height: 1100px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 25px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      text-align: center;
+    }
+    .logo {
+      width: 70px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 4px 0;
+      color: #2c3e50;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: flex;
+      gap: 20px;
+    }
+    .col {
+      width: 50%;
+    }
+
+.qr-inline {
+  margin-top: 8px;
+  margin-left: 15px; /* aligns with bullet text */
+  width: fit-content; /* ensures text follows QR width */
+}
+.qr-inline img {
+  width: 90px;
+  display: block;
+}
+.qr-inline p {
+  font-size: 11px;
+  margin-top: 4px;
+  margin-left: 0; /* ensure no shift */
+  text-align: left; /* force alignment */
+  color: #666;
+}
+    h2 {
+      font-size: 15px;
+      margin-bottom: 5px;
+      color: #34495e;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 2px;
+    }
+
+    ul {
+      margin: 5px 0 10px 15px;
+      padding: 0;
+    }
+    li {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .highlight {
+      color: #27ae60;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .qr-inline {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .qr-inline img {
+      width: 90px;
+    }
+    .qr-inline p {
+      font-size: 11px;
+      margin-top: 4px;
+      color: #666;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div>
+    <!-- Header -->
+    <div class="header">
+      <img src="https://datasphere.eduspace.work/img/logos/dsa.png" class="logo" alt="DataSphere Logo">
+      <h1>FREE PYTHON COURSE</h1>
+      <div class="subtitle">May – June 2026</div>
+    </div>
+
+    <div class="intro">
+      Learn Python from scratch with hands-on projects and live interactive sessions.
+    </div>
+
+    <!-- Content -->
+    <div class="grid">
+      <div class="col">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Beginner-friendly program</li>
+          <li>Live classes with recordings</li>
+          <li>Projects and assignments</li>
+          <li>Doubt support</li>
+          <li>Certificate</li>
+        </ul>
+
+        <h2>Eligibility</h2>
+        <ul>
+          <li>Students (any stream)</li>
+          <li>Freshers & job seekers</li>
+          <li>Career switchers</li>
+          <li>No prior coding required</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h2>What You Learn</h2>
+        <ul>
+          <li>Python basics</li>
+          <li>Data structures</li>
+          <li>Functions</li>
+          <li>File handling</li>
+          <li>Error handling</li>
+        </ul>
+
+        <h2>Duration</h2>
+        <p class="highlight">6–8 Weeks (May – June 2026)</p>
+
+        <!-- QR moved here -->
+        <div class="qr-inline">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://chat.whatsapp.com/K6UC4JaQspxD0TN2pvD1Ax" alt="QR Code">
+          <p>Scan to join WhatsApp community</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <div><strong>Free enrollment – limited seats</strong></div>
+      <a class="btn" href="https://datasphere.eduspace.work/courses/python/" target="_blank">
+        Enroll Now
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    Limited seats available. Register today.
+  </div>
+
+</div>
+
+</body>
+</html>
